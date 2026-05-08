@@ -69,7 +69,7 @@ export default function ServicesPage() {
       />
 
       {/* Divisions Section */}
-      <section className="py-24 bg-white">
+      <section className="py-12 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8">
             <motion.div 
@@ -77,7 +77,7 @@ export default function ServicesPage() {
               whileInView={{ opacity: 1, x: 0 }}
               whileHover={{ y: -8 }}
               viewport={{ once: true }}
-              className="p-12 border-2 border-slate-100 bg-white hover:shadow-2xl transition-all group hover:border-[#1841B8]"
+              className="p-8 md:p-12 border-2 border-slate-100 bg-white hover:shadow-2xl transition-all group hover:border-[#1841B8]"
             >
               <div className="w-12 h-12 bg-slate-50 flex items-center justify-center mb-8 rounded-sm text-brand-blue">
                 <Building2 className="w-6 h-6" />
@@ -110,7 +110,7 @@ export default function ServicesPage() {
               whileInView={{ opacity: 1, x: 0 }}
               whileHover={{ y: -8 }}
               viewport={{ once: true }}
-              className="p-12 bg-[#0A1F4C] text-white hover:shadow-2xl transition-all group border-b-4 border-brand-blue border-2 border-transparent hover:border-[#A00D24]"
+              className="p-8 md:p-12 bg-[#0A1F4C] text-white hover:shadow-2xl transition-all group border-b-4 border-brand-blue border-2 border-transparent hover:border-[#A00D24]"
             >
               <div className="w-12 h-12 bg-white/5 flex items-center justify-center mb-8 rounded-sm text-[#D33553]">
                 <Landmark className="w-6 h-6" />
@@ -144,11 +144,11 @@ export default function ServicesPage() {
       </section>
 
       {/* Detailed Services Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-16">
+          <div className="mb-12 md:mb-16 text-center md:text-left">
             <span className="text-xs font-bold tracking-[0.2em] text-brand-blue uppercase">Business Growth</span>
-            <h2 className="mt-4 heading-serif text-5xl font-bold text-brand-dark max-w-2xl leading-tight">
+            <h2 className="mt-4 heading-serif text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark max-w-2xl leading-tight mx-auto md:mx-0">
               Everything your new or growing business needs.
             </h2>
           </div>
@@ -161,7 +161,7 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className={`p-10 bg-white hover:shadow-2xl transition-all group relative border-slate-100 ${
+                className={`p-8 md:p-10 bg-white hover:shadow-2xl transition-all group relative border-slate-100 ${
                   index % 2 === 0 ? 'md:border-r md:border-b' : 'md:border-b'
                 } ${index >= detailedServices.length - 2 ? 'md:border-b-0' : ''} border-b md:border-b-inherit`}
               >
@@ -198,8 +198,8 @@ export default function ServicesPage() {
           </svg>
         </div>
         
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
-          <h2 className="heading-serif text-5xl font-bold text-white leading-tight">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 md:space-y-10">
+          <h2 className="heading-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
             Not sure where to start?
           </h2>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">

@@ -50,14 +50,14 @@ export default function AboutPage() {
       />
 
       {/* Our Story Section */}
-      <section className="py-24 bg-white overflow-hidden" ref={scrollRef}>
+      <section className="py-12 md:py-24 bg-white overflow-hidden" ref={scrollRef}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="relative">
               {/* Offset Blue Border - Bottom Right */}
-              <div className="absolute -bottom-10 -right-10 w-full h-full border-2 border-brand-blue/20 -z-10 rounded-sm" />
+              <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 w-full h-full border-2 border-brand-blue/20 -z-10 rounded-sm" />
               
-              <div className="relative z-10 shadow-2xl rounded-sm overflow-hidden h-[600px]">
+              <div className="relative z-10 shadow-2xl rounded-sm overflow-hidden h-[400px] md:h-[600px]">
                 <motion.img 
                   style={{ y }}
                   src="/images/about-team.png" 
@@ -74,8 +74,8 @@ export default function AboutPage() {
             <div className="space-y-8">
               <div>
                 <span className="text-xs font-bold tracking-[0.2em] text-brand-blue uppercase">Our Story</span>
-                <h2 className="mt-6 heading-serif text-5xl font-bold text-brand-dark leading-tight">
-                  Strategy, positioning, and <br />
+                <h2 className="mt-6 heading-serif text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark leading-tight">
+                  Strategy, positioning, and <br className="hidden sm:block" />
                   growth — <span className="text-brand-blue italic">done the right way.</span>
                 </h2>
               </div>
@@ -111,13 +111,13 @@ export default function AboutPage() {
       <Stats />
 
       {/* Core Values Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6">
+          <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div className="space-y-6 text-center lg:text-left">
               <span className="text-xs font-bold tracking-[0.2em] text-brand-blue uppercase">What we stand for</span>
-              <h2 className="heading-serif text-5xl font-bold text-brand-dark">Our core values.</h2>
-              <p className="text-slate-500 text-lg max-w-md">
+              <h2 className="heading-serif text-4xl md:text-5xl font-bold text-brand-dark">Our core values.</h2>
+              <p className="text-slate-500 text-base md:text-lg max-w-md mx-auto lg:mx-0">
                 We're more than just a consulting firm. We're your partners in growth, committed to excellence in every detail.
               </p>
             </div>

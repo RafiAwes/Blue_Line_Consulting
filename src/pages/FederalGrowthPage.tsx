@@ -67,25 +67,25 @@ export default function FederalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="space-y-8"
             >
-              <div className="space-y-4">
-                <div className="flex items-center gap-4">
+              <div className="space-y-4 text-center lg:text-left">
+                <div className="flex items-center gap-4 justify-center lg:justify-start">
                   <div className="h-[2px] w-12 bg-[#A00D24]" />
-                  <span className="text-xs font-bold tracking-[0.3em] text-[#A00D24] uppercase">A BLULINE CONSULTING GROUP COMPANY</span>
+                  <span className="text-[10px] sm:text-xs font-bold tracking-[0.3em] text-[#A00D24] uppercase">A BLULINE CONSULTING GROUP COMPANY</span>
                   <div className="h-[2px] w-12 bg-[#A00D24]" />
                 </div>
-                <h1 className="heading-serif text-7xl md:text-8xl font-bold leading-[0.9] tracking-tight">
+                <h1 className="heading-serif text-5xl sm:text-7xl md:text-8xl font-bold leading-[0.9] tracking-tight">
                   <span className="text-[#0A1F4C] block">FEDERAL</span>
                   <span className="text-[#A00D24] block">GROWTH.</span>
                 </h1>
               </div>
               
-              <p className="text-lg text-slate-600 max-w-lg leading-relaxed font-medium">
+              <p className="text-base sm:text-lg text-slate-600 max-w-lg leading-relaxed font-medium mx-auto lg:mx-0 text-center lg:text-left">
                 Federal Growth helps businesses navigate, compete, and win federal government contracts. From registration to proposal support — we're with you every step of the way.
               </p>
 
-              <div className="pt-4">
+              <div className="pt-4 text-center lg:text-left">
                 <Link to="/get-started">
-                  <Button className="!bg-[#A00D24] hover:!bg-[#A00D24]/90 text-white px-8 py-4 h-auto text-sm font-bold tracking-widest uppercase rounded-sm shadow-xl shadow-[#A00D24]/20 group transition-all">
+                  <Button className="!bg-[#A00D24] hover:!bg-[#A00D24]/90 text-white px-6 sm:px-8 py-4 h-auto text-xs sm:text-sm font-bold tracking-widest uppercase rounded-sm shadow-xl shadow-[#A00D24]/20 group transition-all">
                     GET STARTED TODAY <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
                   </Button>
                 </Link>
@@ -117,9 +117,9 @@ export default function FederalGrowthPage() {
       </section>
 
       {/* Pillars Section */}
-      <section className="py-24 border-y border-slate-100 bg-white">
+      <section className="py-16 md:py-24 border-y border-slate-100 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12 text-center md:text-left">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 text-center md:text-left">
             {pillarServices.map((service, i) => (
               <motion.div
                 key={service.title}
@@ -127,13 +127,13 @@ export default function FederalGrowthPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="space-y-4 group"
+                className={`space-y-4 group ${i === pillarServices.length - 1 && pillarServices.length % 2 !== 0 ? 'col-span-2 md:col-span-1' : ''}`}
               >
                 <div className="flex justify-center md:justify-start">
-                  <service.icon className="w-8 h-8 text-[#A00D24]" />
+                  <service.icon className="w-6 h-6 md:w-8 md:h-8 text-[#A00D24]" />
                 </div>
-                <h3 className="text-xs font-bold tracking-widest text-[#0A1F4C] uppercase">{service.title}</h3>
-                <p className="text-xs text-slate-500 leading-relaxed font-medium">
+                <h3 className="text-[10px] md:text-xs font-bold tracking-widest text-[#0A1F4C] uppercase">{service.title}</h3>
+                <p className="text-[10px] md:text-xs text-slate-500 leading-relaxed font-medium">
                   {service.desc}
                 </p>
               </motion.div>
@@ -159,17 +159,17 @@ export default function FederalGrowthPage() {
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-12 lg:justify-end">
+            <div className="flex flex-wrap items-center gap-8 md:gap-12 justify-center lg:justify-end">
               {valueProps.map((prop) => (
                 <div key={prop.label} className="flex flex-col items-center gap-3">
-                  <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-[#A00D24]">
-                    <prop.icon className="w-5 h-5" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 flex items-center justify-center text-[#A00D24]">
+                    <prop.icon className="w-4 h-4 md:w-5 md:h-5" />
                   </div>
-                  <span className="text-[10px] font-bold tracking-[0.2em] text-white/70 uppercase text-center w-20">{prop.label}</span>
+                  <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] text-white/70 uppercase text-center w-20">{prop.label}</span>
                 </div>
               ))}
               <Link to="/get-started">
-                <Button className="!bg-[#A00D24] hover:!bg-[#A00D24]/90 text-white rounded-sm px-6 py-4 h-auto font-bold tracking-widest text-[11px] uppercase shadow-lg shadow-[#A00D24]/20 transition-all ml-4">
+                <Button className="!bg-[#A00D24] hover:!bg-[#A00D24]/90 text-white rounded-sm px-6 py-4 h-auto font-bold tracking-widest text-[10px] md:text-[11px] uppercase shadow-lg shadow-[#A00D24]/20 transition-all">
                   LET'S WIN TOGETHER →
                 </Button>
               </Link>

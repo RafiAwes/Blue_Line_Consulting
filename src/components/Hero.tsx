@@ -65,18 +65,18 @@ export const Hero = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="flex flex-col space-y-8 pl-8 border-l-2 border-brand-blue/20"
+              className="flex flex-col space-y-8 lg:pl-8 lg:border-l-2 border-brand-blue/20 items-center lg:items-start text-center lg:text-left"
             >
               <div className="space-y-6">
-                <h1 className="heading-serif text-5xl md:text-7xl font-bold text-brand-dark leading-[1.1]">
-                  We Help You <br />
-                  Build Your <br />
+                <h1 className="heading-serif text-4xl sm:text-5xl md:text-7xl font-bold text-brand-dark leading-[1.1]">
+                  We Help You <br className="hidden sm:block" />
+                  Build Your <br className="hidden sm:block" />
                   <span className="text-brand-blue relative inline-block">
                     Business.
                     <div className="absolute -bottom-2 left-0 w-full h-1 bg-brand-blue" />
                   </span>
                 </h1>
-                <p className="text-lg text-slate-500 max-w-sm leading-relaxed font-medium">
+                <p className="text-base sm:text-lg text-slate-500 max-w-sm leading-relaxed font-medium mx-auto lg:mx-0">
                   Blu Line Consulting Group provides everything <br className="hidden md:block" />
                   you need to launch, grow, and scale your <br className="hidden md:block" />
                   business with confidence.
@@ -85,7 +85,7 @@ export const Hero = () => {
               
               <div>
                 <Link to="/get-started">
-                  <Button size="lg" className="bg-brand-blue hover:bg-brand-blue/90 text-white px-10 py-4 text-base font-bold tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all">
+                  <Button size="lg" className="bg-brand-blue hover:bg-brand-blue/90 text-white px-8 sm:px-10 py-4 text-sm sm:text-base font-bold tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all">
                     GET STARTED TODAY
                   </Button>
                 </Link>
@@ -96,9 +96,9 @@ export const Hero = () => {
       </div>
 
       {/* Features Bar */}
-      <div className="relative z-40 bg-[#F0F7FF] border-t border-slate-100 py-12">
+      <div className="relative z-40 bg-[#F0F7FF] border-t border-slate-100 py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-0">
             {features.map((feature, index) => (
               <motion.div 
                 key={index}
@@ -106,9 +106,9 @@ export const Hero = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`flex items-start space-x-4 group cursor-default py-4 lg:py-0 ${
+                className={`flex items-start space-x-4 group cursor-default ${
                   index !== features.length - 1 ? 'lg:border-r lg:border-slate-300/50' : ''
-                } ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8 lg:pl-8'}`}
+                } ${index % 2 === 0 ? 'sm:pr-8' : 'sm:pl-8'} lg:px-8`}
               >
                 <div className="flex-shrink-0 bg-white p-3 rounded-lg shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
                   <div className="w-8 h-8 flex items-center justify-center">
