@@ -233,12 +233,12 @@ export default function FederalGrowthPage() {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative"
+              className="relative isolate"
             >
-              <div className="absolute -inset-4 border border-[#A00D24]/20 -z-10 translate-x-8 translate-y-8" />
+              <div className="absolute top-6 left-6 w-full h-full border-2 border-[#A00D24] -z-10" />
               <div className="relative rounded-sm overflow-hidden shadow-2xl">
                 <img 
-                  src="/images/federal-capitol.png" 
+                  src="/images/federal-bottom.jpeg" 
                   alt="US Capitol" 
                   className="w-full h-auto"
                   referrerPolicy="no-referrer"

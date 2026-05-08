@@ -11,7 +11,7 @@ export const Footer = () => {
     <footer className="pt-16 md:pt-24 pb-12 bg-brand-dark text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16 md:mb-20">
-          <div className="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
+          <div className="space-y-8 flex flex-col items-start text-left">
             <Link to="/" className="inline-block group">
               <div className="bg-white p-2 rounded-sm inline-block transition-transform group-hover:scale-105">
                 <img 
@@ -26,7 +26,7 @@ export const Footer = () => {
             </p>
           </div>
 
-          <div className="text-center sm:text-left">
+          <div className="text-left">
             <h4 className="font-bold text-sm tracking-widest uppercase mb-6 md:mb-8 text-white">Navigate</h4>
             <ul className="space-y-4 text-sm text-slate-400">
               <li><Link to="/" className="hover:text-brand-accent transition-colors">Home</Link></li>
@@ -38,7 +38,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="text-center sm:text-left">
+          <div className="text-left">
             <h4 className="font-bold text-sm tracking-widest uppercase mb-6 md:mb-8 text-white">Services</h4>
             <ul className="space-y-4 text-sm text-slate-400">
               <li><a href="#" className="hover:text-brand-accent transition-colors">Business Growth</a></li>
@@ -50,23 +50,23 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="text-center sm:text-left">
+          <div className="text-left">
             <h4 className="font-bold text-sm tracking-widest uppercase mb-6 md:mb-8 text-white">Contact</h4>
             <ul className="space-y-6 text-sm text-slate-400">
-              <li className="flex items-start gap-4 justify-center sm:justify-start">
+              <li className="flex items-start gap-4 justify-start">
                 <Mail className="w-5 h-5 text-brand-accent shrink-0" />
                 <span>hello@blulinegroup.com</span>
               </li>
-              <li className="flex items-start gap-4 justify-center sm:justify-start">
+              <li className="flex items-start gap-4 justify-start">
                 <Phone className="w-5 h-5 text-brand-accent shrink-0" />
                 <span>(555) 012-4578</span>
               </li>
-              <li className="flex items-start gap-4 justify-center sm:justify-start">
+              <li className="flex items-start gap-4 justify-start">
                 <MapPin className="w-5 h-5 text-brand-accent shrink-0" />
                 <span>New York, NY</span>
               </li>
             </ul>
-            <div className="flex gap-6 mt-10 justify-center sm:justify-start">
+            <div className="flex gap-6 mt-10 justify-start">
               <a href="#" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
@@ -81,7 +81,7 @@ export const Footer = () => {
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-slate-500 text-xs text-center md:text-left">
+          <p className="text-slate-500 text-xs text-left">
             © 2026 Blu Line Consulting Group. All rights reserved.
           </p>
           <div className="flex gap-8 text-slate-500 text-xs">
