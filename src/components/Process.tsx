@@ -47,7 +47,7 @@ export const Process = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
               viewport={{ once: true }}
-              className="relative p-10 bg-white border border-slate-100 hover:shadow-2xl hover:shadow-brand-blue/5 transition-all group"
+              className="relative p-10 bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-brand-blue/10 transition-all group"
             >
               <div className="heading-serif text-6xl font-bold text-slate-100 group-hover:text-brand-blue/10 transition-colors mb-6">
                 {step.num}
