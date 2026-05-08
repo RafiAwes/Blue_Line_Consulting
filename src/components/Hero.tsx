@@ -65,7 +65,7 @@ export const Hero = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="flex flex-col space-y-8 lg:pl-8 lg:border-l-2 border-brand-blue/20 items-center lg:items-start text-center lg:text-left"
+              className="flex flex-col space-y-8 lg:pl-8 lg:border-l-2 border-brand-blue/20 items-start text-left"
             >
               <div className="space-y-6">
                 <h1 className="heading-serif text-4xl sm:text-5xl md:text-7xl font-bold text-brand-dark leading-[1.1]">
@@ -76,7 +76,7 @@ export const Hero = () => {
                     <div className="absolute -bottom-2 left-0 w-full h-1 bg-brand-blue" />
                   </span>
                 </h1>
-                <p className="text-base sm:text-lg text-slate-500 max-w-sm leading-relaxed font-medium mx-auto lg:mx-0">
+                <p className="text-base sm:text-lg text-slate-500 max-w-sm leading-relaxed font-medium mx-0">
                   Blu Line Consulting Group provides everything <br className="hidden md:block" />
                   you need to launch, grow, and scale your <br className="hidden md:block" />
                   business with confidence.

@@ -13,7 +13,7 @@ interface PageHeaderProps {
 
 export const PageHeader = ({ label, title, description }: PageHeaderProps) => {
   return (
-    <section className="pt-40 pb-20 bg-header-bg text-center md:text-left">
+    <section className="pt-24 pb-12 bg-header-bg text-left">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

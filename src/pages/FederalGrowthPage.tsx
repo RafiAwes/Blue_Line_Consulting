@@ -58,7 +58,7 @@ export default function FederalGrowthPage() {
   return (
     <div className="bg-white">
       {/* Custom Hero Section */}
-      <section className="pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+      <section className="pt-20 pb-12 md:pt-28 md:pb-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -67,8 +67,8 @@ export default function FederalGrowthPage() {
               transition={{ duration: 0.6 }}
               className="space-y-8"
             >
-              <div className="space-y-4 text-center lg:text-left">
-                <div className="flex items-center gap-4 justify-center lg:justify-start">
+              <div className="space-y-4 text-left">
+                <div className="flex items-center gap-4 justify-start">
                   <div className="h-[2px] w-12 bg-[#A00D24]" />
                   <span className="text-[10px] sm:text-xs font-bold tracking-[0.3em] text-[#A00D24] uppercase">A BLULINE CONSULTING GROUP COMPANY</span>
                   <div className="h-[2px] w-12 bg-[#A00D24]" />
@@ -79,11 +79,11 @@ export default function FederalGrowthPage() {
                 </h1>
               </div>
               
-              <p className="text-base sm:text-lg text-slate-600 max-w-lg leading-relaxed font-medium mx-auto lg:mx-0 text-center lg:text-left">
+              <p className="text-base sm:text-lg text-slate-600 max-w-lg leading-relaxed font-medium mx-0 text-left">
                 Federal Growth helps businesses navigate, compete, and win federal government contracts. From registration to proposal support — we're with you every step of the way.
               </p>
 
-              <div className="pt-4 text-center lg:text-left">
+              <div className="pt-4 text-left">
                 <Link to="/get-started">
                   <Button className="!bg-[#A00D24] hover:!bg-[#A00D24]/90 text-white px-6 sm:px-8 py-4 h-auto text-xs sm:text-sm font-bold tracking-widest uppercase rounded-sm shadow-xl shadow-[#A00D24]/20 group transition-all">
                     GET STARTED TODAY <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
