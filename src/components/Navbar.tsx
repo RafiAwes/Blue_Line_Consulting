@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, LogIn } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Button } from './Button';
 
@@ -12,7 +12,7 @@ export const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'Services', path: '/services' },
-    { name: 'Federal Growth', path: '/federal-growth' },
+    // { name: 'Federal Growth', path: '/federal-growth' },
   ];
 
   return (
@@ -45,11 +45,11 @@ export const Navbar = () => {
           </div>
 
           <div className="flex items-center space-x-2 sm:space-x-4">
-            <div className="hidden lg:block">
-              <Button variant="ghost" size="sm" className="flex items-center gap-2 font-bold text-brand-blue">
-                CLIENT LOGIN
+            {/* <div className="hidden lg:block">
+              <Button variant="outline" size="sm" className="flex items-center gap-2 font-bold text-brand-blue text-[11px] tracking-widest uppercase">
+                <LogIn className="w-4 h-4" /> CLIENT LOGIN
               </Button>
-            </div>
+            </div> */}
             <Link to="/get-started" className="hidden sm:block">
               <Button size="sm" className="bg-brand-blue text-white text-xs font-bold uppercase tracking-widest px-6">
                 Get Started
@@ -92,9 +92,9 @@ export const Navbar = () => {
                 </Link>
               ))}
               <div className="pt-4 flex flex-col gap-3">
-                <Button variant="outline" className="w-full text-brand-blue font-bold">
-                  CLIENT LOGIN
-                </Button>
+                {/* <Button variant="outline" className="w-full text-brand-blue font-bold flex items-center gap-2 justify-center">
+                  <LogIn className="w-4 h-4" /> CLIENT LOGIN
+                </Button> */}
                 <Link to="/get-started" onClick={() => setIsOpen(false)}>
                   <Button className="w-full bg-brand-blue text-white font-bold">
                     GET STARTED

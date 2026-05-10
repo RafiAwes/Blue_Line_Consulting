@@ -58,7 +58,7 @@ export default function FederalGrowthPage() {
   return (
     <div className="bg-white">
       {/* Custom Hero Section */}
-      <section className="pt-20 pb-12 md:pt-28 md:pb-20 overflow-hidden">
+      <section className="pt-12 pb-10 md:pt-20 md:pb-16 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
